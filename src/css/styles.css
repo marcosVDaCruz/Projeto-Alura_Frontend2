@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+  --cor_primaria: #000000;
+  --cor_secundaria: #f6f6f6;
+  --cor_terciaria: #ff0e59;
+  --cor_hover: #272727;
+  --cor_strong: #00ffff;
+
+  --fonte_primaria: "Krona one", sans-serif;
+  --fonte_secundaria: "Montserrat", sans-serif;
+}
+
+* { /* Reset CSS: resetar as configurações padrões do HTML. */
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box; /* Para os elementos filhos (tudo dentro do body) não sairem do elemento pai (body). */
+  background-color: var(--cor_primaria);
+  color: var(--cor_secundaria);
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+
+.menu {
+  display: flex;
+  gap: 80px;
+}
+
+.menu_link {
+  font-family: var(--fonte_secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor_terciaria);
+  text-decoration: none;
+}
+
+.menu_link:hover {
+  color: var(--cor_strong);
+}
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  padding: 5% 15%;
+}
+
+.titulo {
+  font-size: 2.25rempx;
+  font-family: var(--fonte_primaria);
+}
+
+.texto {
+  font-size: 1.5rem;
+  font-family: var(--fonte_secundaria);
+  text-align: left;
+}
+
+.titulo-destaque {
+  color: var(--cor_terciaria);
+}
+
+.titulo-destaque:hover {
+  color: var(--cor_strong);
+}
+
+section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.links_subtitulo {
+  font-family: var(--fonte_primaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.buttom {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 50%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 4px solid var(--cor_terciaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--fonte_secundaria);
+  color: var(--cor_secundaria);
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttom:hover {
+  background-color: var(--cor_hover);
+  border: 4px solid var(--cor_strong);
+  cursor: pointer;
+}
+
+.imagem {
+  padding: 10px;
+  border-radius: 10%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.rodape {
+  color: var(--cor_primaria);
+  background-color: var(--cor_terciaria);
+  padding: 24px;
+  text-align: center;
+  font-family: var(--fonte_secundaria);
+  width: 400;
+  font-size: 1.5rem;
+}
+
+/* Pagina de Curriculo: */
+
+.estudos_links {
+  color: var(--cor_secundaria);
+}
+
+.estudos_links:hover {
+  cursor: pointer;
+  color: var(--cor_strong);
+}
